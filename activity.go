@@ -2,7 +2,6 @@ package zmqpub
 
 import (
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
-	"github.com/TIBCOSoftware/flogo-lib/logger"
 
 	zmq "github.com/alecthomas/gozmq"
 )
@@ -15,7 +14,7 @@ const (
 )
 
 // log is the default package logger
-var flogoLogger = logger.GetLogger("activity-tibco-zmqpub")
+var logger = logger.GetLogger("activity-tibco-zmqpub")
 var subsExpected = 1
 
 // MyActivity is a stub for your Activity implementation
